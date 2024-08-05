@@ -13,7 +13,7 @@ model = GPT2LMHeadModel.from_pretrained(model_path)
 model.eval()
 model.cuda()
 
-base_path = "./datasets"
+base_path = "./data"
 
 train_parquet = os.path.join(base_path, "cbt/CN/train-00000-of-00001.parquet")
 val_parquet = os.path.join(base_path, "cbt/CN/validation-00000-of-00001.parquet")
